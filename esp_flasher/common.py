@@ -189,8 +189,8 @@ def format_bootloader_path(path, model, flash_mode, flash_freq):
     return path.replace("$MODEL$", model).replace("$FLASH_MODE$", flash_mode).replace("$FLASH_FREQ$", flash_freq)
 
 
-def format_partitions_path(path, model):
-    return path.replace("$MODEL$", model)
+def format_partitions_path(path, model, size):
+    return path.replace("$MODEL$", model).replace("$FLASH$", size)
 
 
 def configure_write_flash_args(
@@ -226,7 +226,7 @@ def configure_write_flash_args(
         )
 
         if not partitions_path:
-            partitions_path = format_partitions_path(ESP32_DEFAULT_PARTITIONS, model)
+            partitions_path = format_partitions_path(ESP32_DEFAULT_PARTITIONS, model, flash_size)
 
         partitions = open_downloadable_binary(partitions_path)
         otadata = open_downloadable_binary(otadata_path)
