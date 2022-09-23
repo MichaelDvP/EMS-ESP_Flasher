@@ -1,22 +1,21 @@
-[![Build_special_firmware](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+# ESP-Flasher for EMS-ESP
+
+Forced from [https://github.com/Jason2866/ESP_Flasher/](https://github.com/Jason2866/ESP_Flasher/)
 
 
-# ESP-Flasher for Tasmota
+ESP-Flasher is a utility app for ESP8266 / ESP32 and is designed to make flashing EMS-ESP as simple as possible by:
 
-[![GitHub Releases](https://img.shields.io/github/downloads/Jason2866/ESP_Flasher/total?label=downloads&color=%231FA3EC&style=for-the-badge)](https://github.com/Jason2866/ESP_Flasher/releases/latest)
-
-ESP-Flasher is a utility app for ESP8266 / ESP32 and is designed to make flashing Tasmota on ESPs as simple as possible by:
-
- * Having pre-built binaries for most operating systems.
+ * Having pre-built binaries windows.
  * Hiding all non-essential options for flashing. All necessary options for flashing
-   (bootloader, flash mode) are automatically extracted from the binary.
+   (bootloader, flash mode, partition) are automatically loaded from local directory.
+ * selects partition scheme depending on cpu and flash: "partitions.<cpu>.<flashsize>.bin"
 
 The flashing process is done using the [esptool](https://github.com/espressif/esptool)
 library by espressif.
 
 ## Installation
 
-- Check the [releases section](https://github.com/Jason2866/ESP_Flasher/releases) for downloads for your platform. Just double-click it and it'll start.
+- Check the [releases section](https://github.com/MichaelDvP/EMS-ESP_Flasher/releases) for downloads.
 
 - If you have Python installed you can install from PyPI: **`pip install esp-flasher`**.
   Start the GUI by `esp_flasher`. Alternatively, you can use the command line interface ( type `esp_flasher -h` for info)
