@@ -1,6 +1,6 @@
 # ESP-Flasher for EMS-ESP
 
-Forced from [https://github.com/Jason2866/ESP_Flasher/](https://github.com/Jason2866/ESP_Flasher/)
+Forked from [https://github.com/Jason2866/ESP_Flasher/](https://github.com/Jason2866/ESP_Flasher/)
 
 
 ESP-Flasher is a utility app for ESP8266 / ESP32 and is designed to make flashing EMS-ESP as simple as possible by:
