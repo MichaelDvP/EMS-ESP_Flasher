@@ -5,7 +5,7 @@ Forked from [https://github.com/Jason2866/ESP_Flasher/](https://github.com/Jason
 
 ESP-Flasher is a utility app for ESP8266 / ESP32 and is designed to make flashing EMS-ESP as simple as possible by:
 
- * Having pre-built binaries windows.
+ * Having pre-built binaries.
  * Hiding all non-essential options for flashing. All necessary options for flashing
    (bootloader, flash mode, partition) are automatically loaded from local directory.
  * selects partition scheme depending on cpu and flash: "partitions.<cpu>.<flashsize>.bin"
