@@ -2,18 +2,15 @@ import re
 
 __version__ = "1.4.2"
 
-ESP32_DEFAULT_OTA_DATA = "boot_app0.bin"
-ESP32_DEFAULT_BOOTLOADER_FORMAT = "bootloader_$FLASH_MODE$_$FLASH_FREQ$.bin"
-ESP32_DEFAULT_PARTITIONS = "partitions.$MODEL$.$FLASH$.bin"
 
-ESP32_ONLINE_OTA_DATA = "https://github.com/espressif/arduino-esp32/raw/1.0.6/tools/partitions/boot_app0.bin"
-ESP32_ONLINE_BOOTLOADER = (
-    "https://github.com/espressif/arduino-esp32/raw/2.0.3-RC1/"
+ESP32_DEFAULT_OTA_DATA = "https://github.com/espressif/arduino-esp32/blob/master/tools/partitions/boot_app0.bin"
+
+ESP32_DEFAULT_BOOTLOADER_FORMAT = (
+    "https://github.com/espressif/arduino-esp32/blob/master/"
     "tools/sdk/$MODEL$/bin/bootloader_$FLASH_MODE$_$FLASH_FREQ$.bin"
 )
-ESP32_ONLINE_PARTITIONS = {
-    "https://raw.githubusercontent.com/MichaelDvP/EMS-ESP_Flasher/master/partitions.$MODEL$.$FLASH$.bin"
-}
+ESP32_DEFAULT_PARTITIONS =  "https://github.com/MichaelDvP/EMS-ESP_Flasher/blob/master/partitions.$MODEL$.$FLASH$.bin"
+
 
 # https://stackoverflow.com/a/3809435/8924614
 HTTP_REGEX = re.compile(
