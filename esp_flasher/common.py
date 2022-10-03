@@ -6,6 +6,9 @@ import esp_flasher.own_esptool as esptool
 from esp_flasher.const import (
     ESP32_DEFAULT_PARTITIONS,
     HTTP_REGEX,
+    ESP32_ONLINE_PARTITIONS,
+    ESP32_ONLINE_BOOTLOADER,
+    ESP32_ONLINE_OTA_DATA,
 )
 from esp_flasher.helpers import prevent_print
 
